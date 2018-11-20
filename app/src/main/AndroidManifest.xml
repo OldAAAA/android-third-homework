@@ -15,16 +15,18 @@
 
         </activity>
         <activity android:name=".Activity.login" >
+
+        </activity>
+        <activity android:name=".Activity.register" />
+        <activity android:name=".Activity.search" />
+        <activity android:name=".Activity.class_details" />
+        <activity android:name=".Activity.allCourse">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.register" />
-        <activity android:name=".Activity.search" />
-        <activity android:name=".Activity.class_details" />
-        <activity android:name=".Activity.allCourse"></activity>
         <activity android:name=".Activity.Item" >
 
         </activity>
