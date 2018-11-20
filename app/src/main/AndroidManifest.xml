@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magicwind.android.fitness_club">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.IndexActivity" >
+
+        </activity>
+        <activity android:name=".Activity.login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.register" />
+        <activity android:name=".Activity.search" />
+        <activity android:name=".Activity.class_details" />
+        <activity android:name=".Activity.allCourse"></activity>
+        <activity android:name=".Activity.Item" >
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_course"
+            android:title="我的课程" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_invoice"
+            android:title="购买清单" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_information"
+            android:title="我的信息" />
+        <item
+            android:id="@+id/nav_coachlist"
+            android:icon="@drawable/ic_action_setting"
+            android:title="设置" />
+
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_action_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send"
+                android:title="Send" />
+        </menu>
+    </item>
+</menu>

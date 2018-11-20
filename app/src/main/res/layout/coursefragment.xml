@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.allCourse">
+
+    <!-- TODO: Update blank fragment radio_btn -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.yhx.app.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp">
+
+
+            <Button
+                android:id="@+id/btn_serarch"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:hint="搜索" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/btn_serarch"
+                android:hint="塑形" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="15dp"
+                    android:onClick="details"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="1dp"
+                        android:gravity="fill"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="180dp"
+                            android:background="@drawable/boxing"
+                            android:gravity="center|bottom"
+                            android:text="战斗拳击塑形训练"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="?attr/colorBackgroundFloating"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="拳击，燃脂效率最高的运动之一。每一次出拳都是蹬地、转胯、送肩发力，是一项全身性的综合塑形运动"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/button" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="15dp"
+
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="1dp"
+                        android:gravity="fill"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/title_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/yoga"
+                            android:gravity="center|bottom"
+                            android:text="瑜伽腰腹塑形训练"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="?attr/colorBackgroundFloating"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="课程通过特定的瑜伽体式发动腹部、腰部、背部的肌群，同时拉伸美化肌肉线条，达到腰腹塑形的效果"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

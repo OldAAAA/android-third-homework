@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginVertical="15dp"
+
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="1dp"
+                        android:gravity="fill"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@drawable/boxing"
+                            android:gravity="center|bottom"
+                            android:text="战斗拳击塑形训练"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="?attr/colorBackgroundFloating"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:text="拳击，燃脂效率最高的运动之一。每一次出拳都是蹬地、转胯、送肩发力，是一项全身性的综合塑形运动"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:text="周三、周五"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:text="19:00-20:00"
+                            android:textColor="?attr/colorControlNormal"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/trainer_photo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/boxingtrainer"
+                            android:gravity="center|bottom"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="?attr/colorBackgroundFloating"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Handy"
+                                android:textAllCaps="false"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:typeface="sans" />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="20dp"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="phone-18810692333"
+                                android:textSize="16sp"
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp" />
+
+                            <TextView
+                                android:id="@+id/PS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="IMMAA国际综合格斗MMA协会主席 ，USD国际运动学院中国区董事会主席"
+                                android:textColor="?android:attr/actionMenuTextColor"
+                                android:typeface="sans" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dip"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:lineSpacingExtra="30sp"
+                        android:text="Try it!"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="26sp"
+                        android:typeface="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
