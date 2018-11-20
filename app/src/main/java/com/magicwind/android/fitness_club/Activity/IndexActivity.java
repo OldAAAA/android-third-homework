@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.magicwind.android.fitness_club.Images;
-import com.magicwind.android.fitness_club.MyListAdapter;
+import com.magicwind.android.fitness_club.Model.Images;
+import com.magicwind.android.fitness_club.Model.MyListAdapter;
 import com.magicwind.android.fitness_club.R;
 import com.youth.banner.Banner;
 

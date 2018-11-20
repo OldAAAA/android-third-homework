@@ -1,4 +1,4 @@
-package com.magicwind.android.fitness_club;
+package com.magicwind.android.fitness_club.Model;
 
 public class Images {
 
