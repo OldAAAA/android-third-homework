@@ -13,6 +13,8 @@ import android.widget.HorizontalScrollView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.baidu.mapapi.CoordType;
+import com.baidu.mapapi.SDKInitializer;
 import com.magicwind.android.fitness_club.R;
 
 import java.util.ArrayList;
@@ -114,6 +116,12 @@ public class allCourse extends FragmentActivity implements OnPageChangeListener{
     }
     public void details(View view){
         Intent intent = new Intent(this,class_details.class);
+        intent.putExtra("videoname","1");
+        startActivity(intent);
+    }
+    public void details1(View view){
+        Intent intent = new Intent(this,class_details.class);
+        intent.putExtra("videoname","2");
         startActivity(intent);
     }
 }

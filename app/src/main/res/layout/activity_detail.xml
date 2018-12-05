@@ -7,12 +7,21 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,17 +40,12 @@
                     app:cardElevation="0dp">
 
                     <LinearLayout
+                        android:id="@+id/vedio"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginHorizontal="1dp"
                         android:gravity="fill"
-                        android:id="@+id/vedio"
                         android:orientation="vertical">
-
-                        <SurfaceView
-                            android:id="@+id/surfaceView"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
 
                         <TextView
                             android:id="@+id/title_1"
@@ -79,8 +83,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="80px"
                             android:text="周三、周五"
-                            android:textSize="18sp"
-                            />
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/textView7"
@@ -136,25 +139,43 @@
                                 android:layout_height="8dp" />
 
                             <TextView
-                                android:id="@+id/phone"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="phone-18810692333"
-                                android:textSize="16sp"
-                                android:textStyle="italic" />
-
-                            <TextView
                                 android:id="@+id/textView9"
                                 android:layout_width="match_parent"
                                 android:layout_height="8dp" />
 
-                            <TextView
-                                android:id="@+id/PS"
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="IMMAA国际综合格斗MMA协会主席 ，USD国际运动学院中国区董事会主席"
-                                android:textColor="?android:attr/actionMenuTextColor"
-                                android:typeface="sans" />
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="dailing"
+                                    app:srcCompat="@drawable/ic_phone_bluetooth_speaker_black_24dp"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="sendSMS"
+                                    app:srcCompat="@drawable/ic_message_black_24dp"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                                <ImageButton
+                                    android:id="@+id/imageButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:onClick="sendEmail"
+                                    app:srcCompat="@drawable/ic_email_black_24dp"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -166,13 +187,22 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/bmapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
                     <Button
+                        android:id="@+id/tryit"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_margin="5dip"
                         android:background="@drawable/button"
                         android:gravity="center"
                         android:lineSpacingExtra="30sp"
+                        android:onClick="onClick"
                         android:text="Try it!"
                         android:textAllCaps="true"
                         android:textAppearance="@style/TextAppearance.AppCompat"

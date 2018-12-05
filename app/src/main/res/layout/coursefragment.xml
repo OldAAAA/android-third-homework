@@ -79,7 +79,7 @@
                             android:id="@+id/title_1"
                             android:layout_width="wrap_content"
                             android:layout_height="180dp"
-                            android:background="@drawable/boxing"
+                            android:background="@drawable/ap"
                             android:gravity="center|bottom"
                             android:text="战斗拳击塑形训练"
                             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginVertical="15dp"
-
+                    android:onClick="details1"
                     app:cardCornerRadius="25dp"
                     app:cardElevation="14dp">
 
@@ -123,7 +123,7 @@
                             android:id="@+id/title_2"
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
-                            android:background="@drawable/yoga"
+                            android:background="@drawable/ab"
                             android:gravity="center|bottom"
                             android:text="瑜伽腰腹塑形训练"
                             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
